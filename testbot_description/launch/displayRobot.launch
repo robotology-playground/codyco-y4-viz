@@ -1,0 +1,16 @@
+<launch>
+<group ns="robot">
+<arg name="model" />
+<arg name="gui" default="False" />
+<arg name="vel" default="True" />
+<arg name="eff" default="True" />
+<param name="robot_description" textfile="$(arg model)"  />
+<param name="use_gui" value="$(arg gui)"/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+<node name="joint_state_publisher" pkg="testbot_description" type="joint_state_publisher" />
+<param name="publish_default_velocities"  value="$(arg vel)" />
+<param name="publish_default_effort"  value="$(arg eff)" />
+<node name="wrench_stamped_publisher" pkg="testbot_description" type="wrench_stamped_publisher" />
+<node name="tf_broadcaster" pkg="testbot_description" type="tf_broadcaster" />
+</group>
+</launch>
