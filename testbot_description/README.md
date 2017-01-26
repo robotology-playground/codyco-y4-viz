@@ -3,8 +3,9 @@
 Usage
 
 * in a new terminal launch roscore: 
-	
-	roscore
+```
+roscore
+```
 
 * in a new terminal launch rviz:
 ```
