@@ -1,6 +1,6 @@
 
 <robot name="robot">
-<!--To open this model with Gazebo replace the null masses, inertias and dimensions of the 'fake links f1 and f2'-->
+    <!--To open this model with Gazebo replace the null masses, inertias and dimensions of the 'fake links f1 and f2'-->
 
     <!--LINKS-->
     <link name="Pelvis">
@@ -453,7 +453,7 @@
             <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
         </inertial>
     </link>
-	<link name="RightUpperLeg_f2">
+    <link name="RightUpperLeg_f2">
         <inertial>
             <mass value="0.0001"/>
             <origin xyz="0 0 0" rpy="0 0 0" />
@@ -612,7 +612,7 @@
             <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
         </inertial>
     </link>
-	<link name="LeftLowerLeg">
+    <link name="LeftLowerLeg">
         <inertial>
             <mass value="2.2654"/>
             <origin xyz="0           0    -0.21406" rpy="0 0 0" />
@@ -641,7 +641,7 @@
             <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
         </inertial>
     </link>
-	<link name="LeftFoot_f2">
+    <link name="LeftFoot_f2">
         <inertial>
             <mass value="0.0001"/>
             <origin xyz="0 0 0" rpy="0 0 0" />
@@ -693,7 +693,7 @@
     </link>
 
 
-	<!--JOINTS-->
+    <!--JOINTS-->
     <joint name="jL5S1_rotx" type="revolute">
         <origin xyz="-7.5e-05           0     0.09681" rpy="0 0 0"/>
         <parent link="Pelvis"/>
@@ -1079,159 +1079,159 @@
         <axis xyz="0 1 0" />
     </joint>
 
-	<!-- Sensor  1-->
-<sensor name="Pelvis_gyro" type="gyroscope">
-<parent link="Pelvis"/>
-<origin xyz="-0.055818  0.00024489    0.093816" rpy="0.11968      1.0446     -3.0045"/>
-</sensor>
-<sensor name="Pelvis_accelerometer" type="accelerometer">
-<parent link="Pelvis"/>
-<origin xyz="-0.055818  0.00024489    0.093816" rpy="0.11968      1.0446     -3.0045"/>
-</sensor>
-<!-- Sensor  2-->
-<sensor name="T8_gyro" type="gyroscope">
-<parent link="T8"/>
-<origin xyz="0.12906 -1.9997e-05    0.071107" rpy="-0.13395      1.0496    -0.17832"/>
-</sensor>
-<sensor name="T8_accelerometer" type="accelerometer">
-<parent link="T8"/>
-<origin xyz="0.12906 -1.9997e-05    0.071107" rpy="-0.13395      1.0496    -0.17832"/>
-</sensor>
-<!-- Sensor  3-->
-<sensor name="Head_gyro" type="gyroscope">
-<parent link="Head"/>
-<origin xyz="-0.064576 -0.00030216    0.071089" rpy="2.564    -0.09408     -1.5942"/>
-</sensor>
-<sensor name="Head_accelerometer" type="accelerometer">
-<parent link="Head"/>
-<origin xyz="-0.064576 -0.00030216    0.071089" rpy="2.564    -0.09408     -1.5942"/>
-</sensor>
-<!-- Sensor  4-->
-<sensor name="RightShoulder_gyro" type="gyroscope">
-<parent link="RightShoulder"/>
-<origin xyz="-0.018314    -0.04573   -0.054844" rpy="0.86405    -0.14355    -0.96613"/>
-</sensor>
-<sensor name="RightShoulder_accelerometer" type="accelerometer">
-<parent link="RightShoulder"/>
-<origin xyz="-0.018314    -0.04573   -0.054844" rpy="0.86405    -0.14355    -0.96613"/>
-</sensor>
-<!-- Sensor  5-->
-<sensor name="RightUpperArm_gyro" type="gyroscope">
-<parent link="RightUpperArm"/>
-<origin xyz="-0.018768    -0.09382    0.018813" rpy="-0.35498   0.0065541     -1.4919"/>
-</sensor>
-<sensor name="RightUpperArm_accelerometer" type="accelerometer">
-<parent link="RightUpperArm"/>
-<origin xyz="-0.018768    -0.09382    0.018813" rpy="-0.35498   0.0065541     -1.4919"/>
-</sensor>
-<!-- Sensor  6-->
-<sensor name="RightForeArm_gyro" type="gyroscope">
-<parent link="RightForeArm"/>
-<origin xyz="0.0017022     -0.1885     0.01879" rpy="-0.8672   -0.036495     -1.4228"/>
-</sensor>
-<sensor name="RightForeArm_accelerometer" type="accelerometer">
-<parent link="RightForeArm"/>
-<origin xyz="0.0017022     -0.1885     0.01879" rpy="-0.8672   -0.036495     -1.4228"/>
-</sensor>
-<!-- Sensor  7-->
-<sensor name="RightHand_gyro" type="gyroscope">
-<parent link="RightHand"/>
-<origin xyz="0.00021029   -0.051876    0.018779" rpy="-0.22076   -0.079589     -1.7793"/>
-</sensor>
-<sensor name="RightHand_accelerometer" type="accelerometer">
-<parent link="RightHand"/>
-<origin xyz="0.00021029   -0.051876    0.018779" rpy="-0.22076   -0.079589     -1.7793"/>
-</sensor>
-<!-- Sensor  8-->
-<sensor name="LeftShoulder_gyro" type="gyroscope">
-<parent link="LeftShoulder"/>
-<origin xyz="-0.01834    0.045757   -0.054847" rpy="-0.99214    -0.17215      1.1717"/>
-</sensor>
-<sensor name="LeftShoulder_accelerometer" type="accelerometer">
-<parent link="LeftShoulder"/>
-<origin xyz="-0.01834    0.045757   -0.054847" rpy="-0.99214    -0.17215      1.1717"/>
-</sensor>
-<!-- Sensor  9-->
-<sensor name="LeftUpperArm_gyro" type="gyroscope">
-<parent link="LeftUpperArm"/>
-<origin xyz="-0.018755    0.093804      0.0188" rpy="0.11731   -0.096586      1.5622"/>
-</sensor>
-<sensor name="LeftUpperArm_accelerometer" type="accelerometer">
-<parent link="LeftUpperArm"/>
-<origin xyz="-0.018755    0.093804      0.0188" rpy="0.11731   -0.096586      1.5622"/>
-</sensor>
-<!-- Sensor  10-->
-<sensor name="LeftForeArm_gyro" type="gyroscope">
-<parent link="LeftForeArm"/>
-<origin xyz="0.0016809     0.18843    0.018762" rpy="0.14484   -0.057022      1.3172"/>
-</sensor>
-<sensor name="LeftForeArm_accelerometer" type="accelerometer">
-<parent link="LeftForeArm"/>
-<origin xyz="0.0016809     0.18843    0.018762" rpy="0.14484   -0.057022      1.3172"/>
-</sensor>
-<!-- Sensor  11-->
-<sensor name="LeftHand_gyro" type="gyroscope">
-<parent link="LeftHand"/>
-<origin xyz="0.00020592     0.05188    0.018901" rpy="-0.32298     0.31766      2.0779"/>
-</sensor>
-<sensor name="LeftHand_accelerometer" type="accelerometer">
-<parent link="LeftHand"/>
-<origin xyz="0.00020592     0.05188    0.018901" rpy="-0.32298     0.31766      2.0779"/>
-</sensor>
-<!-- Sensor  12-->
-<sensor name="RightUpperLeg_gyro" type="gyroscope">
-<parent link="RightUpperLeg"/>
-<origin xyz="0.012258   -0.041101    -0.24643" rpy="2.977      1.3208      1.7162"/>
-</sensor>
-<sensor name="RightUpperLeg_accelerometer" type="accelerometer">
-<parent link="RightUpperLeg"/>
-<origin xyz="0.012258   -0.041101    -0.24643" rpy="2.977      1.3208      1.7162"/>
-</sensor>
-<!-- Sensor  13-->
-<sensor name="RightLowerLeg_gyro" type="gyroscope">
-<parent link="RightLowerLeg"/>
-<origin xyz="0.032414   0.0072127    -0.13924" rpy="-1.0656      1.4974    -0.36283"/>
-</sensor>
-<sensor name="RightLowerLeg_accelerometer" type="accelerometer">
-<parent link="RightLowerLeg"/>
-<origin xyz="0.032414   0.0072127    -0.13924" rpy="-1.0656      1.4974    -0.36283"/>
-</sensor>
-<!-- Sensor  14-->
-<sensor name="RightFoot_gyro" type="gyroscope">
-<parent link="RightFoot"/>
-<origin xyz="0.076632  0.00096971   -0.010802" rpy="0.20666     0.56978   -0.085078"/>
-</sensor>
-<sensor name="RightFoot_accelerometer" type="accelerometer">
-<parent link="RightFoot"/>
-<origin xyz="0.076632  0.00096971   -0.010802" rpy="0.20666     0.56978   -0.085078"/>
-</sensor>
-<!-- Sensor  15-->
-<sensor name="LeftUpperLeg_gyro" type="gyroscope">
-<parent link="LeftUpperLeg"/>
-<origin xyz="0.011575    0.042049    -0.24624" rpy="3.1278      1.3207    -0.78132"/>
-</sensor>
-<sensor name="LeftUpperLeg_accelerometer" type="accelerometer">
-<parent link="LeftUpperLeg"/>
-<origin xyz="0.011575    0.042049    -0.24624" rpy="3.1278      1.3207    -0.78132"/>
-</sensor>
-<!-- Sensor  16-->
-<sensor name="LeftLowerLeg_gyro" type="gyroscope">
-<parent link="LeftLowerLeg"/>
-<origin xyz="0.032342  -0.0075107    -0.13924" rpy="0.85516      1.4657     0.87108"/>
-</sensor>
-<sensor name="LeftLowerLeg_accelerometer" type="accelerometer">
-<parent link="LeftLowerLeg"/>
-<origin xyz="0.032342  -0.0075107    -0.13924" rpy="0.85516      1.4657     0.87108"/>
-</sensor>
-<!-- Sensor  17-->
-<sensor name="LeftFoot_gyro" type="gyroscope">
-<parent link="LeftFoot"/>
-<origin xyz="0.076704  -0.0012343   -0.010825" rpy="-0.13271     0.79946     0.17694"/>
-</sensor>
-<sensor name="LeftFoot_accelerometer" type="accelerometer">
-<parent link="LeftFoot"/>
-<origin xyz="0.076704  -0.0012343   -0.010825" rpy="-0.13271     0.79946     0.17694"/>
-</sensor>
+    <!-- Sensor  1-->
+    <sensor name="Pelvis_gyro" type="gyroscope">
+        <parent link="Pelvis"/>
+        <origin xyz="-0.055818  0.00024489    0.093816" rpy="0.11968      1.0446     -3.0045"/>
+    </sensor>
+    <sensor name="Pelvis_accelerometer" type="accelerometer">
+        <parent link="Pelvis"/>
+        <origin xyz="-0.055818  0.00024489    0.093816" rpy="0.11968      1.0446     -3.0045"/>
+    </sensor>
+    <!-- Sensor  2-->
+    <sensor name="T8_gyro" type="gyroscope">
+        <parent link="T8"/>
+        <origin xyz="0.12906 -1.9997e-05    0.071107" rpy="-0.13395      1.0496    -0.17832"/>
+    </sensor>
+    <sensor name="T8_accelerometer" type="accelerometer">
+        <parent link="T8"/>
+        <origin xyz="0.12906 -1.9997e-05    0.071107" rpy="-0.13395      1.0496    -0.17832"/>
+    </sensor>
+    <!-- Sensor  3-->
+    <sensor name="Head_gyro" type="gyroscope">
+        <parent link="Head"/>
+        <origin xyz="-0.064576 -0.00030216    0.071089" rpy="2.564    -0.09408     -1.5942"/>
+    </sensor>
+    <sensor name="Head_accelerometer" type="accelerometer">
+        <parent link="Head"/>
+        <origin xyz="-0.064576 -0.00030216    0.071089" rpy="2.564    -0.09408     -1.5942"/>
+    </sensor>
+    <!-- Sensor  4-->
+    <sensor name="RightShoulder_gyro" type="gyroscope">
+        <parent link="RightShoulder"/>
+        <origin xyz="-0.018314    -0.04573   -0.054844" rpy="0.86405    -0.14355    -0.96613"/>
+    </sensor>
+    <sensor name="RightShoulder_accelerometer" type="accelerometer">
+        <parent link="RightShoulder"/>
+        <origin xyz="-0.018314    -0.04573   -0.054844" rpy="0.86405    -0.14355    -0.96613"/>
+    </sensor>
+    <!-- Sensor  5-->
+    <sensor name="RightUpperArm_gyro" type="gyroscope">
+        <parent link="RightUpperArm"/>
+        <origin xyz="-0.018768    -0.09382    0.018813" rpy="-0.35498   0.0065541     -1.4919"/>
+    </sensor>
+    <sensor name="RightUpperArm_accelerometer" type="accelerometer">
+        <parent link="RightUpperArm"/>
+        <origin xyz="-0.018768    -0.09382    0.018813" rpy="-0.35498   0.0065541     -1.4919"/>
+    </sensor>
+    <!-- Sensor  6-->
+    <sensor name="RightForeArm_gyro" type="gyroscope">
+        <parent link="RightForeArm"/>
+        <origin xyz="0.0017022     -0.1885     0.01879" rpy="-0.8672   -0.036495     -1.4228"/>
+    </sensor>
+    <sensor name="RightForeArm_accelerometer" type="accelerometer">
+        <parent link="RightForeArm"/>
+        <origin xyz="0.0017022     -0.1885     0.01879" rpy="-0.8672   -0.036495     -1.4228"/>
+    </sensor>
+    <!-- Sensor  7-->
+    <sensor name="RightHand_gyro" type="gyroscope">
+        <parent link="RightHand"/>
+        <origin xyz="0.00021029   -0.051876    0.018779" rpy="-0.22076   -0.079589     -1.7793"/>
+    </sensor>
+    <sensor name="RightHand_accelerometer" type="accelerometer">
+        <parent link="RightHand"/>
+        <origin xyz="0.00021029   -0.051876    0.018779" rpy="-0.22076   -0.079589     -1.7793"/>
+    </sensor>
+    <!-- Sensor  8-->
+    <sensor name="LeftShoulder_gyro" type="gyroscope">
+        <parent link="LeftShoulder"/>
+        <origin xyz="-0.01834    0.045757   -0.054847" rpy="-0.99214    -0.17215      1.1717"/>
+    </sensor>
+    <sensor name="LeftShoulder_accelerometer" type="accelerometer">
+        <parent link="LeftShoulder"/>
+        <origin xyz="-0.01834    0.045757   -0.054847" rpy="-0.99214    -0.17215      1.1717"/>
+    </sensor>
+    <!-- Sensor  9-->
+    <sensor name="LeftUpperArm_gyro" type="gyroscope">
+        <parent link="LeftUpperArm"/>
+        <origin xyz="-0.018755    0.093804      0.0188" rpy="0.11731   -0.096586      1.5622"/>
+    </sensor>
+    <sensor name="LeftUpperArm_accelerometer" type="accelerometer">
+        <parent link="LeftUpperArm"/>
+        <origin xyz="-0.018755    0.093804      0.0188" rpy="0.11731   -0.096586      1.5622"/>
+    </sensor>
+    <!-- Sensor  10-->
+    <sensor name="LeftForeArm_gyro" type="gyroscope">
+        <parent link="LeftForeArm"/>
+        <origin xyz="0.0016809     0.18843    0.018762" rpy="0.14484   -0.057022      1.3172"/>
+    </sensor>
+    <sensor name="LeftForeArm_accelerometer" type="accelerometer">
+        <parent link="LeftForeArm"/>
+        <origin xyz="0.0016809     0.18843    0.018762" rpy="0.14484   -0.057022      1.3172"/>
+    </sensor>
+    <!-- Sensor  11-->
+    <sensor name="LeftHand_gyro" type="gyroscope">
+        <parent link="LeftHand"/>
+        <origin xyz="0.00020592     0.05188    0.018901" rpy="-0.32298     0.31766      2.0779"/>
+    </sensor>
+    <sensor name="LeftHand_accelerometer" type="accelerometer">
+        <parent link="LeftHand"/>
+        <origin xyz="0.00020592     0.05188    0.018901" rpy="-0.32298     0.31766      2.0779"/>
+    </sensor>
+    <!-- Sensor  12-->
+    <sensor name="RightUpperLeg_gyro" type="gyroscope">
+        <parent link="RightUpperLeg"/>
+        <origin xyz="0.012258   -0.041101    -0.24643" rpy="2.977      1.3208      1.7162"/>
+    </sensor>
+    <sensor name="RightUpperLeg_accelerometer" type="accelerometer">
+        <parent link="RightUpperLeg"/>
+        <origin xyz="0.012258   -0.041101    -0.24643" rpy="2.977      1.3208      1.7162"/>
+    </sensor>
+    <!-- Sensor  13-->
+    <sensor name="RightLowerLeg_gyro" type="gyroscope">
+        <parent link="RightLowerLeg"/>
+        <origin xyz="0.032414   0.0072127    -0.13924" rpy="-1.0656      1.4974    -0.36283"/>
+    </sensor>
+    <sensor name="RightLowerLeg_accelerometer" type="accelerometer">
+        <parent link="RightLowerLeg"/>
+        <origin xyz="0.032414   0.0072127    -0.13924" rpy="-1.0656      1.4974    -0.36283"/>
+    </sensor>
+    <!-- Sensor  14-->
+    <sensor name="RightFoot_gyro" type="gyroscope">
+        <parent link="RightFoot"/>
+        <origin xyz="0.076632  0.00096971   -0.010802" rpy="0.20666     0.56978   -0.085078"/>
+    </sensor>
+    <sensor name="RightFoot_accelerometer" type="accelerometer">
+        <parent link="RightFoot"/>
+        <origin xyz="0.076632  0.00096971   -0.010802" rpy="0.20666     0.56978   -0.085078"/>
+    </sensor>
+    <!-- Sensor  15-->
+    <sensor name="LeftUpperLeg_gyro" type="gyroscope">
+        <parent link="LeftUpperLeg"/>
+        <origin xyz="0.011575    0.042049    -0.24624" rpy="3.1278      1.3207    -0.78132"/>
+    </sensor>
+    <sensor name="LeftUpperLeg_accelerometer" type="accelerometer">
+        <parent link="LeftUpperLeg"/>
+        <origin xyz="0.011575    0.042049    -0.24624" rpy="3.1278      1.3207    -0.78132"/>
+    </sensor>
+    <!-- Sensor  16-->
+    <sensor name="LeftLowerLeg_gyro" type="gyroscope">
+        <parent link="LeftLowerLeg"/>
+        <origin xyz="0.032342  -0.0075107    -0.13924" rpy="0.85516      1.4657     0.87108"/>
+    </sensor>
+    <sensor name="LeftLowerLeg_accelerometer" type="accelerometer">
+        <parent link="LeftLowerLeg"/>
+        <origin xyz="0.032342  -0.0075107    -0.13924" rpy="0.85516      1.4657     0.87108"/>
+    </sensor>
+    <!-- Sensor  17-->
+    <sensor name="LeftFoot_gyro" type="gyroscope">
+        <parent link="LeftFoot"/>
+        <origin xyz="0.076704  -0.0012343   -0.010825" rpy="-0.13271     0.79946     0.17694"/>
+    </sensor>
+    <sensor name="LeftFoot_accelerometer" type="accelerometer">
+        <parent link="LeftFoot"/>
+        <origin xyz="0.076704  -0.0012343   -0.010825" rpy="-0.13271     0.79946     0.17694"/>
+    </sensor>
 
 
 </robot>

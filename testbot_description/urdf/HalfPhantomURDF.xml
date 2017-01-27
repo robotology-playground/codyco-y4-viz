@@ -16,7 +16,7 @@
                 <box size="0.13409     0.23961    0.096443"/>
             </geometry>
             <material name="white">
-            <color rgba="1 1 1 1"/>
+                <color rgba="1 1 1 1"/>
             </material>
         </visual>
     </link>
@@ -328,7 +328,7 @@
         <dynamics damping="0.1" friction="0.0"/>
         <limit effort="30" velocity="1.0" lower="-0.872665" upper="0.436332" />
         <axis xyz="0 0 1" />
-    </joint>-->
+    </joint>
 
 </robot>
 
