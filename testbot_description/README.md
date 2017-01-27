@@ -1,6 +1,7 @@
-## testbot_description
+# testbot_description
+Ros package to visualize robot and the applied effort and wrenches in rviz.
 
-Usage
+## Usage
 
 * Clone this repository on your local:
 ```
@@ -19,28 +20,24 @@ cp -r ~/github/codyco-y4-viz/testbot_description/ .
 cd ~/catkin_ws
 catkin_make
 ```
-* Move to the src folder in testbot_description:
-```
-cd src/testbot_description/src
-```
-* in a new terminal launch roscore:
+* In a new terminal launch roscore:
 ```
 roscore
 ```
-* in a new terminal launch rviz:
+* In a new terminal launch rviz:
 ```
 rosrun rviz rviz
 ```
-* move to the testbot_description folder:
+* Move to the testbot_description folder:
 ```
 cd ~/catkin_ws/src/testbot_description
 ```
-* in a new terminal run the launch file associated to the urdf model which you want to visualize (we take as an example the XSensURDF.urdf file):
+* In a new terminal run the launch file associated to the urdf model which you want to visualize (we take as an example the XSensURDF.urdf file):
 ```
 roslaunch testbot_description displayRobot.launch  model:=urdf/XSensURDF.urdf
 ```
-* in rviz set the *FixedFrame* to ground
-* in rviz select "Add" and choose from "By display type" the option **RobotModel** in the rviz folder. Once the robot model is added in the field *Robot Description* add a "prefix" before robot_description as:
+* In rviz set the *FixedFrame* to ground
+* In rviz select "Add" and choose from "By display type" the option **RobotModel** in the rviz folder. Once the robot model is added in the field *Robot Description* add a "prefix" before robot_description as:
 ```
 robot/robot_description
 ```
@@ -48,7 +45,7 @@ robot/robot_description
 * **Display Effort** - select "Add" and choose from "By topic" the option **Effort** in the /robot/joint_states folder. Once the effort are added in the field *Robot Description* add a "prefix" as before and in the field **Topic** select "/robot/joint_states". The efforts displayed are the ones set in the joint_state_publisher.cpp file that can be found in the /testbot_description/src folder. This file is runned through the diplayRobot.launch.
 * **Display Wrenches** - select "Add" and choose from "By topic" the option **WrenchStamped** in the /robot/wrench_stamped folder. Once the wrenches are added in the field **Topic** select "/robot/wrench_stamped". The efforts displayed are the ones set in the wrench_stamped_publisher.cpp file that can be found in the /testbot_description/src folder. This file is runned through the diplayRobot.launch.
 
-Launch files, models and publishers association:
+## Launch files, models and publishers association:
 
 Specific:
 displayRobot.launch --> allow to display XSensURDF.urdf/XSensURDF.xml
