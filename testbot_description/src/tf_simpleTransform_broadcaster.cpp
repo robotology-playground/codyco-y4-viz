@@ -28,39 +28,39 @@ int main(int argc, char **argv){
     going_around.header.frame_id = "ground";
     going_around.child_frame_id = "Box";
 
+    // joint_state setting
+    joint_state.name.resize(16);
+    joint_state.name[0] ="RightRotHip_x";
+    joint_state.name[1] ="RightRotHip_y";
+    joint_state.name[2] ="RightRotHip_z";
+    joint_state.name[3] ="RightRotKnee_y";
+    joint_state.name[4] ="RightRotKnee_z";
+    joint_state.name[5] ="RightRotAnkle_x";
+    joint_state.name[6] ="RightRotAnkle_y";
+    joint_state.name[7] ="RightRotAnkle_z";
+    joint_state.name[8] ="LeftRotHip_x";
+    joint_state.name[9] ="LeftRotHip_y";
+    joint_state.name[10] ="LeftRotHip_z";
+    joint_state.name[11] ="LeftRotKnee_y";
+    joint_state.name[12] ="LeftRotKnee_z";
+    joint_state.name[13] ="LeftRotAnkle_x";
+    joint_state.name[14] ="LeftRotAnkle_y";
+    joint_state.name[15] ="LeftRotAnkle_z";
+
+    joint_state.position.resize(16);
+    joint_state.velocity.resize(16);
+    joint_state.effort.resize(16);
+
     while (ros::ok()) {
 
         //update joint_state
         joint_state.header.stamp = ros::Time::now();
-        joint_state.name.resize(16);
-        joint_state.name[0] ="RightRotHip_x";
-        joint_state.name[1] ="RightRotHip_y";
-        joint_state.name[2] ="RightRotHip_z";
-        joint_state.name[3] ="RightRotKnee_y";
-        joint_state.name[4] ="RightRotKnee_z";
-        joint_state.name[5] ="RightRotAnkle_x";
-        joint_state.name[6] ="RightRotAnkle_y";
-        joint_state.name[7] ="RightRotAnkle_z";
-        joint_state.name[8] ="LeftRotHip_x";
-        joint_state.name[9] ="LeftRotHip_y";
-        joint_state.name[10] ="LeftRotHip_z";
-        joint_state.name[11] ="LeftRotKnee_y";
-        joint_state.name[12] ="LeftRotKnee_z";
-        joint_state.name[13] ="LeftRotAnkle_x";
-        joint_state.name[14] ="LeftRotAnkle_y";
-        joint_state.name[15] ="LeftRotAnkle_z";
-
-
-        joint_state.position.resize(16);
 
         // Create new robot state
         joint_state.position[1] = varhip;
 
         varhip += inc;
         if (varhip<-0.5 || varhip>0.5) inc *= -1;
-
-        joint_state.velocity.resize(16);
-        joint_state.effort.resize(16);
 
         joint_state.effort[1] = wrench;
         wrench += wrench_inc;

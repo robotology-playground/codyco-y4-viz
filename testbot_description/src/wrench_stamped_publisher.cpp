@@ -27,17 +27,16 @@ int main(int argc, char **argv){
 
     double null_F = 0, null_M = 0;
     wrench msgStream;
+    msgStream.Fx = 0.5;
+    msgStream.Fy = 0.5;
+    msgStream.Fz = 1;
+    msgStream.Mx = 0.5;
+    msgStream.My = 0.5;
+    msgStream.Mz = -1.1;
+
+    //msg.stream = getdata();
 
     while (ros::ok()){
-
-        msgStream.Fx = 0.5;
-        msgStream.Fy = 0.5;
-        msgStream.Fz = 1;
-        msgStream.Mx = 0.5;
-        msgStream.My = 0.5;
-        msgStream.Mz = -1.1;
-
-        //msg.stream = getdata();
 
         //compose WrenchStamped Msg
         wrenchMsg.header.stamp = ros::Time::now();

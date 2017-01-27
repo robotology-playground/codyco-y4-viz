@@ -29,71 +29,75 @@ int main(int argc, char **argv){
     going_around.header.frame_id = "ground";
     going_around.child_frame_id = "Pelvis";
 
+    // joint_state setting
+    joint_state.name.resize(48);
+    joint_state.name[0] ="jL5S1_rotx";
+    joint_state.name[1] ="jL5S1_roty";
+    joint_state.name[2] ="jL4L3_rotx";
+    joint_state.name[3] ="jL4L3_roty";
+    joint_state.name[4] ="jL1T12_rotx";
+    joint_state.name[5] ="jL1T12_roty";
+    joint_state.name[6] ="jT9T8_rotx";
+    joint_state.name[7] ="jT9T8_roty";
+    joint_state.name[8] ="jT9T8_rotz";
+    joint_state.name[9] ="jT1C7_rotx";
+    joint_state.name[10] ="jT1C7_roty";
+    joint_state.name[11] ="jT1C7_rotz";
+    joint_state.name[12] ="jC1Head_rotx";
+    joint_state.name[13] ="jC1Head_roty";
+    joint_state.name[14] ="jRightC7Shoulder_rotx";
+    joint_state.name[15] ="jRightShoulder_rotx";
+    joint_state.name[16] ="jRightShoulder_roty";
+    joint_state.name[17] ="jRightShoulder_rotz";
+    joint_state.name[18] ="jRightElbow_roty";
+    joint_state.name[19] ="jRightElbow_rotz";
+    joint_state.name[20] ="jRightWrist_rotx";
+    joint_state.name[21] ="jRightWrist_rotz";
+    joint_state.name[22] ="jLeftC7Shoulder_rotx";
+    joint_state.name[23] ="jLeftShoulder_rotx";
+    joint_state.name[24] ="jLeftShoulder_roty";
+    joint_state.name[25] ="jLeftShoulder_rotz";
+    joint_state.name[26] ="jLeftElbow_roty";
+    joint_state.name[27] ="jLeftElbow_rotz";
+    joint_state.name[28] ="jLeftWrist_rotx";
+    joint_state.name[29] ="jLeftWrist_rotz";
+    joint_state.name[30] ="jRightHip_rotx";
+    joint_state.name[31] ="jRightHip_roty";
+    joint_state.name[32] ="jRightHip_rotz";
+    joint_state.name[33] ="jRightKnee_roty";
+    joint_state.name[34] ="jRightKnee_rotz";
+    joint_state.name[35] ="jRightAnkle_rotx";
+    joint_state.name[36] ="jRightAnkle_roty";
+    joint_state.name[37] ="jRightAnkle_rotz";
+    joint_state.name[38] ="jRightBallFoot_roty";
+    joint_state.name[39] ="jLeftHip_rotx";
+    joint_state.name[40] ="jLeftHip_roty";
+    joint_state.name[41] ="jLeftHip_rotz";
+    joint_state.name[42] ="jLeftKnee_roty";
+    joint_state.name[43] ="jLeftKnee_rotz";
+    joint_state.name[44] ="jLeftAnkle_rotx";
+    joint_state.name[45] ="jLeftAnkle_roty";
+    joint_state.name[46] ="jLeftAnkle_rotz";
+    joint_state.name[47] ="jLeftBallFoot_roty";
+
+    joint_state.position.resize(48);
+    joint_state.velocity.resize(48);
+    joint_state.effort.resize(48);
+
     while (ros::ok()){
 
         //update joint_state
         joint_state.header.stamp = ros::Time::now();
-        joint_state.name.resize(48);
-        joint_state.name[0] ="jL5S1_rotx";
-        joint_state.name[1] ="jL5S1_roty";
-        joint_state.name[2] ="jL4L3_rotx";
-        joint_state.name[3] ="jL4L3_roty";
-        joint_state.name[4] ="jL1T12_rotx";
-        joint_state.name[5] ="jL1T12_roty";
-        joint_state.name[6] ="jT9T8_rotx";
-        joint_state.name[7] ="jT9T8_roty";
-        joint_state.name[8] ="jT9T8_rotz";
-        joint_state.name[9] ="jT1C7_rotx";
-        joint_state.name[10] ="jT1C7_roty";
-        joint_state.name[11] ="jT1C7_rotz";
-        joint_state.name[12] ="jC1Head_rotx";
-        joint_state.name[13] ="jC1Head_roty";
-        joint_state.name[14] ="jRightC7Shoulder_rotx";
-        joint_state.name[15] ="jRightShoulder_rotx";
-        joint_state.name[16] ="jRightShoulder_roty";
-        joint_state.name[17] ="jRightShoulder_rotz";
-        joint_state.name[18] ="jRightElbow_roty";
-        joint_state.name[19] ="jRightElbow_rotz";
-        joint_state.name[20] ="jRightWrist_rotx";
-        joint_state.name[21] ="jRightWrist_rotz";
-        joint_state.name[22] ="jLeftC7Shoulder_rotx";
-        joint_state.name[23] ="jLeftShoulder_rotx";
-        joint_state.name[24] ="jLeftShoulder_roty";
-        joint_state.name[25] ="jLeftShoulder_rotz";
-        joint_state.name[26] ="jLeftElbow_roty";
-        joint_state.name[27] ="jLeftElbow_rotz";
-        joint_state.name[28] ="jLeftWrist_rotx";
-        joint_state.name[29] ="jLeftWrist_rotz";
-        joint_state.name[30] ="jRightHip_rotx";
-        joint_state.name[31] ="jRightHip_roty";
-        joint_state.name[32] ="jRightHip_rotz";
-        joint_state.name[33] ="jRightKnee_roty";
-        joint_state.name[34] ="jRightKnee_rotz";
-        joint_state.name[35] ="jRightAnkle_rotx";
-        joint_state.name[36] ="jRightAnkle_roty";
-        joint_state.name[37] ="jRightAnkle_rotz";
-        joint_state.name[38] ="jRightBallFoot_roty";
-        joint_state.name[39] ="jLeftHip_rotx";
-        joint_state.name[40] ="jLeftHip_roty";
-        joint_state.name[41] ="jLeftHip_rotz";
-        joint_state.name[42] ="jLeftKnee_roty";
-        joint_state.name[43] ="jLeftKnee_rotz";
-        joint_state.name[44] ="jLeftAnkle_rotx";
-        joint_state.name[45] ="jLeftAnkle_roty";
-        joint_state.name[46] ="jLeftAnkle_rotz";
-        joint_state.name[47] ="jLeftBallFoot_roty";
 
-        //joint_state.name[48] ="hjRightHip_roty";
-
-        joint_state.position.resize(48);
+        // position
         //for(int i=0; i<=47; i++){
         //	joint_state.position[i] = zero_pos;
         //}
+
         // Create new robot state
         joint_state.position[31] = var;
         var += inc;
         if (var<-0.3 || var>0.3) inc *= -1;
-
 
         //             joint_state.position[0] = zero_pos;
         //             joint_state.position[1] = zero_pos;
@@ -144,12 +148,12 @@ int main(int argc, char **argv){
         //             joint_state.position[46] = zero_pos;
         //             joint_state.position[47] = zero_pos;
 
-        joint_state.velocity.resize(48);
+        // velocity
         //             for(int i=0; i<=47; i++){
         //                 joint_state.velocity[i] = zero_vel;
         //             }
 
-        joint_state.effort.resize(48);
+        //effort
         //             for(int i=0; i<=47; i++){
         //                 joint_state.effort[i] = zero_effort;
         //             }
