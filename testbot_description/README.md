@@ -3,7 +3,7 @@ Ros package to visualize robot and the applied effort and wrenches in rviz.
 
 ## Usage
 
-* Clone this repository on your local:
+* Clone this repository on your computer:
 ```
 cd github
 git clone https://github.com/robotology-playground/codyco-y4-viz
