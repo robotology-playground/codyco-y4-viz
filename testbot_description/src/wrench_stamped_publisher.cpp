@@ -10,7 +10,7 @@ struct wrench {
     double Mx;
     double My;
     double Mz;
-};
+  };
 
 int main(int argc, char **argv){
 
@@ -51,7 +51,7 @@ int main(int argc, char **argv){
 
         // This will adjust as needed per iteration
         loop_rate.sleep();
-    }
+      }
     return 0;
-}
+  }
 

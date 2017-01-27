@@ -11,23 +11,23 @@ message_generation
 roscpp
 rospy
 tf
-)
+  )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
-DEPENDENCIES
-std_msgs
-geometry_msgs
-sensor_msgs
-)
+    DEPENDENCIES
+    std_msgs
+    geometry_msgs
+    sensor_msgs
+  )
 
 catkin_package(
-CATKIN_DEPENDS message_runtime
-)
+    CATKIN_DEPENDS message_runtime
+  )
 
 include_directories(
-${catkin_INCLUDE_DIRS}
-)
+    ${catkin_INCLUDE_DIRS}
+  )
 
 ## Declare a C++ executable
 add_executable(joint_state_publisher src/joint_state_publisher.cpp)
