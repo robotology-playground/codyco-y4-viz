@@ -46,21 +46,19 @@ robot/robot_description
 * **Display Wrenches** - select "Add" and choose from "By topic" the option **WrenchStamped** in the /robot/wrench_stamped folder. Once the wrenches are added in the field **Topic** select "/robot/wrench_stamped". The efforts displayed are the ones set in the wrench_stamped_publisher.cpp file that can be found in the /testbot_description/src folder. This file is runned through the diplayRobot.launch.
 
 ## Launch files, models and publishers association:
+**Specific:**
+* displayRobot.launch --> allow to display XSensURDF.urdf/XSensURDF.xml
+* joint_state_publisher.cpp --> allow to set the state, transforms and effort applied on XSensURDF.urdf/XSensURDF.xml
+* wrench_stamped_publisher.cpp --> allow to set the wrench applied on XSensURDF.urdf/XSensURDF.xml
+* displayPhantom.launch --> allow to display PhantomURDF.urdf
+* tf_phantomTransform_broadcaster.cpp --> allow to set the state, transforms and effort applied on PhantomURDF.xml
+* displayHalfPhantom.launch --> allow to display HalfPhantom.launch
+* tf_simpleTransform_broadcaster.cpp --> allow to set the state, transforms and effort applied on HalfPhantomURDF.xml
+* tf_broadcaster.cpp --> testing purpose
 
-Specific:
-displayRobot.launch --> allow to display XSensURDF.urdf/XSensURDF.xml
-joint_state_publisher.cpp --> allow to set the state, transforms and effort applied on XSensURDF.urdf/XSensURDF.xml
-wrench_stamped_publisher.cpp --> allow to set the wrench applied on XSensURDF.urdf/XSensURDF.xml
-
-displayPhantom.launch --> allow to display PhantomURDF.urdf
-tf_phantomTransform_broadcaster.cpp --> allow to set the state, transforms and effort applied on PhantomURDF.xml
-
-displayHalfPhantom.launch --> allow to display HalfPhantom.launch
-tf_simpleTransform_broadcaster.cpp --> allow to set the state, transforms and effort applied on HalfPhantomURDF.xml
-
-Generic:
-displayR2D2.launch --> allow to display any urdf or xml
-displayRobotStatic.launch --> allow to display any urdf or xml
-displayHuman.launch --> allow to display any urdf or xml
+**Generic:**
+* displayR2D2.launch --> allow to display any urdf or xml
+* displayRobotStatic.launch --> allow to display any urdf or xml
+* displayHuman.launch --> allow to display any urdf or xml
 
 
