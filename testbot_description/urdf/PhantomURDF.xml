@@ -1,0 +1,1089 @@
+
+<robot name="phantom">
+
+    <!--LINKS-->
+
+    <link name="bacino">
+        <inertial>
+            <mass value="4.9652"/>
+            <origin xyz="0           0    0.048589" rpy="0 0 0" />
+            <inertia ixx="0.027604" iyy="0.011288" izz="0.031195" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    0.048589" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.23961    0.096443"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    0.048589" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.23961    0.096443"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="vertebraLomb5_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="vertebraLomb5">
+        <inertial>
+            <mass value="6.3306"/>
+            <origin xyz="0           0    0.050322" rpy="0 0 0" />
+            <inertia ixx="0.045068" iyy="0.033801" izz="0.067244" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    0.050322" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.15843     0.10065"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    0.050322" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.15843     0.10065"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="vertebraLomb3_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="vertebraLomb3">
+        <inertial>
+            <mass value="6.3306"/>
+            <origin xyz="0           0    0.045465" rpy="0 0 0" />
+            <inertia ixx="0.044087" iyy="0.032819" izz="0.067244" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    0.045465" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.15843     0.09093"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    0.045465" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.15843     0.09093"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="vertebraTor12_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="vertebraTor12">
+        <inertial>
+            <mass value="6.3306"/>
+            <origin xyz="0           0    0.045465" rpy="0 0 0" />
+            <inertia ixx="0.044087" iyy="0.032819" izz="0.067244" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    0.045465" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.15843     0.09093"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    0.045465" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13409     0.15843     0.09093"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="vertebraTor8_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="vertebraTor8_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="vertebraTor8">
+        <inertial>
+            <mass value="2.4826"/>
+            <origin xyz="0           0    0.062885" rpy="0 0 0" />
+            <inertia ixx="0.003843" iyy="0.00723" izz="0.0045281" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    0.062885" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13831    0.052514     0.12577"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    0.062885" rpy="0 0 0" />
+            <geometry>
+                <box size="0.13831    0.052514     0.12577"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="collo_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="collo_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="collo">
+        <inertial>
+            <mass value="0.74478"/>
+            <origin xyz="0           0    0.042348" rpy="0 0 0" />
+            <inertia ixx="0.00058579" iyy="0.00058579" izz="0.00028115" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    0.042348" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.084696" radius="0.013739"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    0.042348" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.084696" radius="0.013739"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="testa_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="testa">
+        <inertial>
+            <mass value="2.2343"/>
+            <origin xyz="0           0    0.080693" rpy="0 0 0" />
+            <inertia ixx="0.0058193" iyy="0.0058193" izz="0.0058193" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    0.080693" rpy="0 0 0" />
+            <geometry>
+                <sphere radius="0.080693"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    0.080693" rpy="0 0 0" />
+            <geometry>
+                <sphere radius="0.080693"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="spallaDestra">
+        <inertial>
+            <mass value="1.924"/>
+            <origin xyz="0   -0.063159           0" rpy="0 0 0" />
+            <inertia ixx="0.00281" iyy="0.00050334" izz="0.00281" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0   -0.063159           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.12632" radius="0.022874"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0   -0.063159           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.12632" radius="0.022874"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="braccioDestro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="braccioDestro_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="braccioDestro">
+        <inertial>
+            <mass value="1.8619"/>
+            <origin xyz="0    -0.14042           0" rpy="0 0 0" />
+            <inertia ixx="0.01267" iyy="0.01267" izz="0.00086624" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0    -0.14042           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.28083" radius="0.030503"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0    -0.14042           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.28083" radius="0.030503"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="avambraccioDestro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="avambraccioDestro">
+        <inertial>
+            <mass value="1.2413"/>
+            <origin xyz="0    -0.11509           0" rpy="0 0 0" />
+            <inertia ixx="0.005609" iyy="0.005609" izz="0.00025666" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0    -0.11509           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.23018" radius="0.020336"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0    -0.11509           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.23018" radius="0.020336"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="manoDestra_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="manoDestra">
+        <inertial>
+            <mass value="0.37239"/>
+            <origin xyz="0   -0.086033           0" rpy="0 0 0" />
+            <inertia ixx="0.00097011" iyy="0.00045968" izz="0.0013271" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0   -0.086033           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.11471     0.17207    0.040671"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0   -0.086033           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.11471     0.17207    0.040671"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="spallaSinistra">
+        <inertial>
+            <mass value="1.924"/>
+            <origin xyz="0    0.063159           0" rpy="0 0 0" />
+            <inertia ixx="0.00281" iyy="0.00050334" izz="0.00281" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0    0.063159           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.12632" radius="0.022874"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0    0.063159           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.12632" radius="0.022874"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="braccioSinistro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="braccioSinistro_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="braccioSinistro">
+        <inertial>
+            <mass value="1.8619"/>
+            <origin xyz="0     0.14042           0" rpy="0 0 0" />
+            <inertia ixx="0.01267" iyy="0.01267" izz="0.00086624" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0     0.14042           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.28083" radius="0.030503"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0     0.14042           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.28083" radius="0.030503"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="avambraccioSinistro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="avambraccioSinistro">
+        <inertial>
+            <mass value="1.2413"/>
+            <origin xyz="0     0.11509           0" rpy="0 0 0" />
+            <inertia ixx="0.005609" iyy="0.005609" izz="0.00025666" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0     0.11509           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.23018" radius="0.020336"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0     0.11509           0" rpy="1.5708 0 0" />
+            <geometry>
+                <cylinder length="0.23018" radius="0.020336"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="manoSinistra_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="manoSinistra">
+        <inertial>
+            <mass value="0.37239"/>
+            <origin xyz="0    0.086033           0" rpy="0 0 0" />
+            <inertia ixx="0.00097011" iyy="0.00045968" izz="0.0013271" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0    0.086033           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.11471     0.17207    0.040671"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0    0.086033           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.11471     0.17207    0.040671"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="cosciaDestra_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="cosciaDestra_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="cosciaDestra">
+        <inertial>
+            <mass value="7.7581"/>
+            <origin xyz="0           0    -0.20463" rpy="0 0 0" />
+            <inertia ixx="0.11345" iyy="0.11345" izz="0.010326" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    -0.20463" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.40926" radius="0.051595"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    -0.20463" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.40926" radius="0.051595"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="polpaccioDestro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="polpaccioDestro">
+        <inertial>
+            <mass value="2.2654"/>
+            <origin xyz="0           0    -0.21406" rpy="0 0 0" />
+            <inertia ixx="0.035474" iyy="0.035474" izz="0.0017488" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    -0.21406" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.42811" radius="0.039293"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    -0.21406" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.42811" radius="0.039293"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="piedeDestro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="piedeDestro_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="piedeDestro">
+        <inertial>
+            <mass value="0.80684"/>
+            <origin xyz="0.047341           0   -0.045923" rpy="0 0 0" />
+            <inertia ixx="0.00098245" iyy="0.0025999" izz="0.0024479" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0.047341           0   -0.045923" rpy="0 0 0" />
+            <geometry>
+                <box size="0.17387    0.078587    0.091847"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.047341           0   -0.045923" rpy="0 0 0" />
+            <geometry>
+                <box size="0.17387    0.078587    0.091847"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="ditaDestro">
+        <inertial>
+            <mass value="0.093097"/>
+            <origin xyz="0.033062           0           0" rpy="0 0 0" />
+            <inertia ixx="4.9587e-05" iyy="3.5594e-05" izz="8.1834e-05" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0.033062           0           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.066123    0.078587    0.014689"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.033062           0           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.066123    0.078587    0.014689"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="cosciaSinistra_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="cosciaSinistra_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="cosciaSinistra">
+        <inertial>
+            <mass value="7.7581"/>
+            <origin xyz="0           0    -0.20463" rpy="0 0 0" />
+            <inertia ixx="0.11345" iyy="0.11345" izz="0.010326" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    -0.20463" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.40926" radius="-0.051595"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    -0.20463" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.40926" radius="-0.051595"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="polpaccioSinistro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="polpaccioSinistro">
+        <inertial>
+            <mass value="2.2654"/>
+            <origin xyz="0           0    -0.21406" rpy="0 0 0" />
+            <inertia ixx="0.035474" iyy="0.035474" izz="0.0017488" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0           0    -0.21406" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.42811" radius="0.039293"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0           0    -0.21406" rpy="0 0 0" />
+            <geometry>
+                <cylinder length="0.42811" radius="0.039293"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="piedeSinistro_f1">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="piedeSinistro_f2">
+        <inertial>
+            <mass value="0.0001"/>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0003" iyy="0.0003" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+    </link>
+    <link name="piedeSinistro">
+        <inertial>
+            <mass value="0.80684"/>
+            <origin xyz="0.047341           0   -0.045923" rpy="0 0 0" />
+            <inertia ixx="0.00098245" iyy="0.0025999" izz="0.0024479" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0.047341           0   -0.045923" rpy="0 0 0" />
+            <geometry>
+                <box size="0.17387    0.078587    0.091847"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.047341           0   -0.045923" rpy="0 0 0" />
+            <geometry>
+                <box size="0.17387    0.078587    0.091847"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="ditaSinistro">
+        <inertial>
+            <mass value="0.093097"/>
+            <origin xyz="0.033062           0           0" rpy="0 0 0" />
+            <inertia ixx="4.9587e-05" iyy="3.5594e-05" izz="8.1834e-05" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0.033062           0           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.066123    0.078587    0.014689"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0.033062           0           0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.066123    0.078587    0.014689"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!--JOINTS-->
+    <joint name="Lomb5Sac1_x" type="revolute">
+        <origin xyz="-7.5e-05           0     0.09681" rpy="0 0 0"/>
+        <parent link="bacino"/>
+        <child link="vertebraLomb5_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.610865" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="Lomb5Sac1_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="vertebraLomb5_f1"/>
+        <child link="vertebraLomb5"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="1.309" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="Lomb4Lomb3_x" type="revolute">
+        <origin xyz="0.000136           0     0.10065" rpy="0 0 0"/>
+        <parent link="vertebraLomb5"/>
+        <child link="vertebraLomb3_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.610865" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="Lomb4Lomb3_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="vertebraLomb3_f1"/>
+        <child link="vertebraLomb3"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="1.309" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="Lomb1Tor12_x" type="revolute">
+        <origin xyz="0           0     0.09093" rpy="0 0 0"/>
+        <parent link="vertebraLomb3"/>
+        <child link="vertebraTor12_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.610865" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="Lomb1Tor12_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="vertebraTor12_f1"/>
+        <child link="vertebraTor12"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="1.309" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="Tor9Tor8_x" type="revolute">
+        <origin xyz="0           0     0.09093" rpy="0 0 0"/>
+        <parent link="vertebraTor12"/>
+        <child link="vertebraTor8_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.349066" upper="0.349066" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="Tor9Tor8_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="vertebraTor8_f1"/>
+        <child link="vertebraTor8_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.261799" upper="0.698132" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="Tor9Tor8_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="vertebraTor8_f2"/>
+        <child link="vertebraTor8"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.610865" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="Tor1Cer7_x" type="revolute">
+        <origin xyz="0           0     0.12577" rpy="0 0 0"/>
+        <parent link="vertebraTor8"/>
+        <child link="collo_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.610865" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="Tor1Cer7_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="collo_f1"/>
+        <child link="collo_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.959931" upper="1.5708" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="Tor1Cer7_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="collo_f2"/>
+        <child link="collo"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-1.22173" upper="1.22173" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="Cer1Testa_x" type="revolute">
+        <origin xyz="0.000323           0    0.084696" rpy="0 0 0"/>
+        <parent link="collo"/>
+        <child link="testa_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.610865" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="Cer1Testa_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="testa_f1"/>
+        <child link="testa"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.436332" upper="0.174533" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="Cer7SpallaDestra_x" type="revolute">
+        <origin xyz="0   -0.026257    0.070261" rpy="0 0 0"/>
+        <parent link="vertebraTor8"/>
+        <child link="spallaDestra"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.0872665" upper="0.785398" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="SpallaDestra_x" type="revolute">
+        <origin xyz="0    -0.12632           0" rpy="0 0 0"/>
+        <parent link="spallaDestra"/>
+        <child link="braccioDestro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-2.35619" upper="1.5708" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="SpallaDestra_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="braccioDestro_f1"/>
+        <child link="braccioDestro_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-1.5708" upper="1.5708" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="SpallaDestra_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="braccioDestro_f2"/>
+        <child link="braccioDestro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.785398" upper="3.14159" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="GomitoDestro_y" type="revolute">
+        <origin xyz="0    -0.28083           0" rpy="0 0 0"/>
+        <parent link="braccioDestro"/>
+        <child link="avambraccioDestro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-1.5708" upper="1.48353" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="GomitoDestro_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="avambraccioDestro_f1"/>
+        <child link="avambraccioDestro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="0" upper="2.53073" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="PolsoDestro_x" type="revolute">
+        <origin xyz="3e-05    -0.23018           0" rpy="0 0 0"/>
+        <parent link="avambraccioDestro"/>
+        <child link="manoDestra_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.872665" upper="1.0472" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="PolsoDestro_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="manoDestra_f1"/>
+        <child link="manoDestra"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="0.349066" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="Cer7SpallaSinistra_x" type="revolute">
+        <origin xyz="0    0.026257    0.070261" rpy="0 0 0"/>
+        <parent link="vertebraTor8"/>
+        <child link="spallaSinistra"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.0872665" upper="0.785398" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="SpallaSinistra_x" type="revolute">
+        <origin xyz="0     0.12632           0" rpy="0 0 0"/>
+        <parent link="spallaSinistra"/>
+        <child link="braccioSinistro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-1.5708" upper="2.35619" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="SpallaSinistra_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="braccioSinistro_f1"/>
+        <child link="braccioSinistro_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-1.5708" upper="1.5708" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="SpallaSinistra_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="braccioSinistro_f2"/>
+        <child link="braccioSinistro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-3.14159" upper="0.785398" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="GomitoSinistro_y" type="revolute">
+        <origin xyz="0     0.28083           0" rpy="0 0 0"/>
+        <parent link="braccioSinistro"/>
+        <child link="avambraccioSinistro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-1.5708" upper="1.48353" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="GomitoSinistro_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="avambraccioSinistro_f1"/>
+        <child link="avambraccioSinistro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-2.53073" upper="0" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="PolsoSinistro_x" type="revolute">
+        <origin xyz="3e-05     0.23018           0" rpy="0 0 0"/>
+        <parent link="avambraccioSinistro"/>
+        <child link="manoSinistra_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-1.0472" upper="0.872665" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="PolsoSinistro_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="manoSinistra_f1"/>
+        <child link="manoSinistra"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.349066" upper="0.523599" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="AncaDestra_x" type="revolute">
+        <origin xyz="3.7e-05   -0.079215    0.000367" rpy="0 0 0"/>
+        <parent link="bacino"/>
+        <child link="cosciaDestra_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="0.785398" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="AncaDestra_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="cosciaDestra_f1"/>
+        <child link="cosciaDestra_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.261799" upper="2.0944" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="AncaDestra_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="cosciaDestra_f2"/>
+        <child link="cosciaDestra"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.785398" upper="0.785398" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="GinocchioDestro_y" type="revolute">
+        <origin xyz="-2e-06           0    -0.40926" rpy="0 0 0"/>
+        <parent link="cosciaDestra"/>
+        <child link="polpaccioDestro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="0" upper="2.35619" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="GinocchioDestro_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="polpaccioDestro_f1"/>
+        <child link="polpaccioDestro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.698132" upper="0.523599" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="CavigliaDestra_x" type="revolute">
+        <origin xyz="-0.000373           0    -0.42811" rpy="0 0 0"/>
+        <parent link="polpaccioDestro"/>
+        <child link="piedeDestro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.785398" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="CavigliaDestra_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="piedeDestro_f1"/>
+        <child link="piedeDestro_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="0.872665" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="CavigliaDestra_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="piedeDestro_f2"/>
+        <child link="piedeDestro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.436332" upper="0.872665" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="TarsoDestro_y" type="revolute">
+        <origin xyz="0.13428           0   -0.078689" rpy="0 0 0"/>
+        <parent link="piedeDestro"/>
+        <child link="ditaDestro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.174533" upper="1.5708" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="AncaSinistra_x" type="revolute">
+        <origin xyz="3.7e-05    0.079215    0.000367" rpy="0 0 0"/>
+        <parent link="bacino"/>
+        <child link="cosciaSinistra_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="0.785398" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="AncaSinistra_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="cosciaSinistra_f1"/>
+        <child link="cosciaSinistra_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.261799" upper="2.0944" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="AncaSinistra_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="cosciaSinistra_f2"/>
+        <child link="cosciaSinistra"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.785398" upper="0.785398" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="GinocchioSinistro_y" type="revolute">
+        <origin xyz="-2e-06           0    -0.40926" rpy="0 0 0"/>
+        <parent link="cosciaSinistra"/>
+        <child link="polpaccioSinistro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="0" upper="2.35619" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="GinocchioSinistro_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="polpaccioSinistro_f1"/>
+        <child link="polpaccioSinistro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="0.698132" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="CavigliaSinistra_x" type="revolute">
+        <origin xyz="-0.000373           0    -0.42811" rpy="0 0 0"/>
+        <parent link="polpaccioSinistro"/>
+        <child link="piedeSinistro_f1"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.610865" upper="0.785398" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <joint name="CavigliaSinistra_y" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="piedeSinistro_f1"/>
+        <child link="piedeSinistro_f2"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.523599" upper="0.872665" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <joint name="CavigliaSinistra_z" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="piedeSinistro_f2"/>
+        <child link="piedeSinistro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.872665" upper="0.436332" />
+        <axis xyz="0 0 1" />
+    </joint>
+    <joint name="TarsoSinistro_y" type="revolute">
+        <origin xyz="0.13428           0   -0.078689" rpy="0 0 0"/>
+        <parent link="piedeSinistro"/>
+        <child link="ditaSinistro"/>
+        <dynamics damping="0.1" friction="0.0"/>
+        <limit effort="30" velocity="1.0" lower="-0.174533" upper="1.5708" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+</robot>
+
+
+
+
